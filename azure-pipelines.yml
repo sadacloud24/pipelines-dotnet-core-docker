@@ -2,8 +2,8 @@ trigger:
 - main
 
 variables:
-  dockerRegistryServiceConnection: 'docker.io/library'
-  imageRepository: 'myacrdotnetcore:v1'
+  dockerRegistryServiceConnection: '<SERVICE_CONNECTION_NAME>'
+  imageRepository: '<IMAGE_NAME>'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
@@ -14,7 +14,7 @@ stages:
   - job: Build
     displayName: Build job
     pool:
-      name: 'testdemo'
+      name: 'myfirstagent'
     steps:
     - task: DockerInstaller@0
       inputs:
