@@ -2,8 +2,8 @@ trigger:
 - main
 
 variables:
-  dockerRegistryServiceConnection: '<SERVICE_CONNECTION_NAME>'
-  imageRepository: '<IMAGE_NAME>'
+  dockerRegistryServiceConnection: '89d78cc8-7997-470a-b592-13f6e1ac6572'
+  imageRepository: 'myacrdotnetcore:v1'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
