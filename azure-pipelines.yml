@@ -14,7 +14,7 @@ stages:
   - job: Build
     displayName: Build job
     pool:
-      name: '<YOUR_AGENT_POOL_NAME>'
+      name: 'testdemo'
     steps:
     - task: DockerInstaller@0
       inputs:
