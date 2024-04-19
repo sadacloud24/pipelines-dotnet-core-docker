@@ -2,8 +2,8 @@ trigger:
 - main
 
 variables:
-  dockerRegistryServiceConnection: '<SERVICE_CONNECTION_NAME>'
-  imageRepository: '<IMAGE_NAME>'
+  dockerRegistryServiceConnection: 'https://github.com/sadacloud24/pipelines-dotnet-core-docker'
+  imageRepository: 'myacrdotnetcore:v1'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
 
